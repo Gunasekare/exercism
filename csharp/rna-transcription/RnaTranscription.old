@@ -1,0 +1,36 @@
+using System;
+
+public static class RnaTranscription
+{
+    public static string ToRna(string nucleotide)
+    {
+        string rnaComplement = "";
+
+        foreach (char letter in nucleotide)
+        {
+            switch (letter)
+            {
+                case 'C':
+                rnaComplement += "G";
+                break;
+
+                case 'G':
+                rnaComplement += "C";
+                break;
+
+                case 'A':
+                rnaComplement += "U";
+                break;
+
+                case 'T':
+                rnaComplement += "A";
+                break;
+
+                default:
+                break;
+            }
+        }
+
+        return rnaComplement;
+    }
+}
