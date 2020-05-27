@@ -2,52 +2,25 @@ using System;
 
 public class SpaceAge
 {
-    public SpaceAge(int seconds)
-    {
-        spaceage = seconds;
-    }
+    public SpaceAge(int seconds) => this.spaceage = seconds;
 
-    public double OnEarth()
-    {
-        return spaceage / earthOrbitalPeriod;
-    }
+    public double OnEarth() => spaceage / earthOrbitalPeriod;
 
-    public double OnMercury()
-    {
-        return spaceage / mercuryOrbitalPeriod;
-    }
+    public double OnMercury() => spaceage / mercuryOrbitalPeriod;
 
-    public double OnVenus()
-    {
-        return spaceage / venusOrbitalPeriod;
-    }
+    public double OnVenus() => spaceage / venusOrbitalPeriod;
 
-    public double OnMars()
-    {
-        return spaceage / marsOrbitalPeriod;
-    }
+    public double OnMars() => spaceage / marsOrbitalPeriod;
 
-    public double OnJupiter()
-    {
-        return spaceage / jupiterOrbitalPeriod;
-    }
+    public double OnJupiter() => spaceage / jupiterOrbitalPeriod;
 
-    public double OnSaturn()
-    {
-        return spaceage / saturnOrbitalPeriod;
-    }
+    public double OnSaturn() => spaceage / saturnOrbitalPeriod;
 
-    public double OnUranus()
-    {
-        return spaceage / uranusOrbitalPeriod;
-    }
+    public double OnUranus() => spaceage / uranusOrbitalPeriod;
 
-    public double OnNeptune()
-    {
-        return spaceage / neptuneOrbitalPeriod;
-    }
+    public double OnNeptune() => spaceage / neptuneOrbitalPeriod;
 
-    private int spaceage;
+    private readonly int spaceage;
     private const double earthOrbitalPeriod = 31557600.0;
     private const double mercuryOrbitalPeriod = earthOrbitalPeriod * 0.2408467;
     private const double venusOrbitalPeriod = earthOrbitalPeriod * 0.61519726;
